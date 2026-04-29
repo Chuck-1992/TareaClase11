@@ -215,7 +215,7 @@ try:
 
     while True:
         try:
-            dato = input("¿Cuántos números desea ingresar? Mínimo 5: ").strip().lower()
+            dato = input("¿Cuántos números desea ingresar?: ").strip().lower()
 
             if dato == "salir":
                 cerrar_programa()
