@@ -3,9 +3,10 @@
 # Arreglos unidimensionales, bucles for, condiciones if y validación de datos
 # ******************************************************************************************
 
-# Importaciones
+# Importacion de utilidades
 from decimal import Decimal, InvalidOperation, getcontext
 from pathlib import Path
+import os
 from datetime import datetime
 
 
@@ -91,7 +92,7 @@ def obtener_carpeta_descargas():
     if carpeta_descargas.exists():
         return carpeta_descargas
 
-    # En caso de que no encuentra la carpeta Descargas, guarda en la carpeta actual del proyecto
+    # En caso de que no encuentra la carpeta Descargas, se guarda en la carpeta actual del proyecto
     return Path.cwd()
 
 
